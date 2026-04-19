@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна</title>
+    <style>
+        body.page-home .hero-card {
+            outline: 2px solid rgba(201, 107, 55, 0.14);
+        }
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body id="top" class="page-home">
+    <header class="site-header">
+        <div class="brand-block">
+            <p class="eyebrow">Персональний сайт студентки 1 курсу</p>
+            <h1>Мої захоплення</h1>
+            <p class="subtitle">Новікова Маргарита, Харківський національний університет ім. В. Н. Каразіна</p>
+        </div>
+        <nav class="main-nav" aria-label="Головне меню">
+            <a href="index.html">Головна</a>
+            <a href="hobbies.html">Захоплення</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="contact.html">Відгук і контакти</a>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="hero-card">
+            <div class="hero-text">
+                <p class="section-label">Головна сторінка</p>
+                <h2>Сайт про речі, які надихають мене щодня</h2>
+                <p>
+                    Я навчаюся на 1 курсі ХНУ ім. В. Н. Каразіна та люблю наповнювати свій день
+                    читанням, музикою, грою на гітарі, комп'ютерними іграми, фільмами й серіалами.
+                    Окреме місце в моєму житті займає німецька мова: я продовжую її вдосконалювати та маю
+                    сертифікат рівня C1.
+                </p>
+                <div class="button-row">
+                    <a class="button-link" href="#about">Дізнатися більше</a>
+                    <a class="button-link alt" href="hobbies.html">Перейти до сторінки захоплень</a>
+                </div>
+            </div>
+            <div class="hero-media">
+                <a href="assets/hero.svg">
+                    <img src="assets/hero.svg" alt="Ілюстрація до теми захоплень">
+                </a>
+                <p class="media-caption">Натисніть на ілюстрацію, щоб відкрити її окремо.</p>
+            </div>
+        </section>
+
+        <section class="section-card" id="about">
+            <div class="section-heading">
+                <p class="section-label">Про мене</p>
+                <h2>Коротко про мої інтереси</h2>
+            </div>
+            <div class="link-cloud">
+                <a href="#facts">Факти</a>
+                <a href="#resources">Корисні посилання</a>
+                <a href="#routes">Маршрут сайтом</a>
+            </div>
+            <p>
+                Для мене захоплення - це спосіб відпочити, відновити сили та знайти нові ідеї. Я люблю
+                чергувати спокійні заняття, як-от читання або перегляд серіалу, з більш активними:
+                грою на гітарі чи зануренням у комп'ютерні ігри. Саме тому цей сайт поєднує творчу,
+                навчальну та розважальну частини мого життя.
+            </p>
+        </section>
+
+        <section class="grid-section" id="facts">
+            <article class="info-card accent">
+                <h3>Що для мене важливо</h3>
+                <ul class="fancy-list">
+                    <li>регулярно читати художню літературу та нонфікшн;</li>
+                    <li>розвивати музичний слух і техніку гри на гітарі;</li>
+                    <li>відкривати нові ігри з цікавим сюжетом;</li>
+                    <li>дивитися фільми та серіали з атмосферною історією;</li>
+                    <li>підтримувати високий рівень німецької мови.</li>
+                </ul>
+            </article>
+            <article class="info-card">
+                <h3>Міні-навігатор по сайту</h3>
+                <ol class="number-list">
+                    <li>На сторінці «Захоплення» зібрано розгорнуті описи, списки та багатоколонковий текст.</li>
+                    <li>На сторінці «Галерея» є фотогалерея з нашаруванням зображень і таблиця.</li>
+                    <li>На сторінці «Відгук і контакти» розміщено форму, карту та корисні контакти.</li>
+                </ol>
+            </article>
+            <article class="info-card spotlight">
+                <h3>Живий факт дня</h3>
+                <p class="fact-text" data-fact-text>
+                    Моє ідеальне дозвілля - книга, чашка чаю та спокійний вечір з музикою у навушниках.
+                </p>
+                <button class="action-button" type="button" data-fact-button>Показати інший факт</button>
+            </article>
+        </section>
+
+        <section class="section-card" id="resources">
+            <div class="section-heading">
+                <p class="section-label">Гіперпосилання</p>
+                <h2>Ресурси, які мені близькі</h2>
+            </div>
+            <div class="resource-list">
+                <a href="https://karazin.ua/" target="_blank" rel="noopener noreferrer">Офіційний сайт ХНУ ім. В. Н. Каразіна</a>
+                <a href="https://www.goethe.de/" target="_blank" rel="noopener noreferrer">Goethe-Institut</a>
+                <a href="https://www.goodreads.com/" target="_blank" rel="noopener noreferrer">Goodreads для читачів</a>
+                <a href="https://letterboxd.com/" target="_blank" rel="noopener noreferrer">Letterboxd для фільмів</a>
+                <a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">Spotify</a>
+            </div>
+        </section>
+
+        <section class="section-card" id="routes">
+            <div class="section-heading">
+                <p class="section-label">Навігація</p>
+                <h2>Куди перейти далі</h2>
+            </div>
+            <div class="card-links">
+                <a class="route-card" href="hobbies.html">
+                    <span>Захоплення</span>
+                    <strong>Більше тексту, списків і внутрішніх закладок</strong>
+                </a>
+                <a class="route-card" href="gallery.html">
+                    <span>Галерея</span>
+                    <strong>Нашаровані зображення, таблиця та улюблені медіа</strong>
+                </a>
+                <a class="route-card" href="contact.html">
+                    <span>Відгук і контакти</span>
+                    <strong>Форма зворотного зв'язку, карта та соціальні мережі</strong>
+                </a>
+            </div>
+            <p class="back-link"><a href="#top">Повернутися на початок сторінки</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <p>&copy; Новікова Маргарита</p>
+            <p>Навчальний сайт-візитка студентки 1 курсу ХНУ ім. В. Н. Каразіна</p>
+        </div>
+        <div class="footer-links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://t.me/" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">Spotify</a>
+        </div>
+        <div class="clock-badge" data-clock>
+            Київський час завантажується...
+        </div>
+    </footer>
+</body>
+</html>

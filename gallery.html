@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея | Новікова Маргарита</title>
+    <style>
+        body.page-gallery .layered-gallery {
+            box-shadow: inset 0 0 0 1px rgba(201, 107, 55, 0.08);
+        }
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body id="top" class="page-gallery">
+    <header class="site-header compact">
+        <div class="brand-block">
+            <p class="eyebrow">Сторінка 3</p>
+            <h1>Галерея та улюблені медіа</h1>
+            <p class="subtitle">Візуальні образи моїх інтересів, таблиця й добірки</p>
+        </div>
+        <nav class="main-nav" aria-label="Головне меню">
+            <a href="index.html">Головна</a>
+            <a href="hobbies.html">Захоплення</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="contact.html">Відгук і контакти</a>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="section-card">
+            <div class="section-heading">
+                <p class="section-label">Закладки сторінки</p>
+                <h2>Швидкий перехід до розділів</h2>
+            </div>
+            <div class="link-cloud">
+                <a href="#gallery">Фотогалерея</a>
+                <a href="#films">Фільми й серіали</a>
+                <a href="#video">Відео</a>
+                <a href="#music">Музичні настрої</a>
+            </div>
+        </section>
+
+        <section class="section-card" id="gallery">
+            <div class="section-heading">
+                <p class="section-label">Фотогалерея</p>
+                <h2>Графічні образи, що нашаровуються один на один</h2>
+            </div>
+            <div class="layered-gallery">
+                <a class="layer one" href="assets/book.svg"><img src="assets/book.svg" alt="Ілюстрація книги"></a>
+                <a class="layer two" href="assets/guitar.svg"><img src="assets/guitar.svg" alt="Ілюстрація гітари"></a>
+                <a class="layer three" href="assets/game.svg"><img src="assets/game.svg" alt="Ілюстрація гри"></a>
+                <a class="layer four" href="assets/movie.svg"><img src="assets/movie.svg" alt="Ілюстрація кіно"></a>
+                <a class="layer five" href="assets/music.svg"><img src="assets/music.svg" alt="Ілюстрація музики"></a>
+            </div>
+            <p class="media-caption">
+                Кожне зображення відкривається окремо: таким чином на сторінці є і фотогалерея, і
+                посилання на графічні файли.
+            </p>
+        </section>
+
+        <section class="section-card" id="films">
+            <div class="section-heading">
+                <p class="section-label">Таблиця</p>
+                <h2>Улюблені фільми, серіали та настрій від перегляду</h2>
+            </div>
+            <table class="styled-table">
+                <caption>Добірка фільмів і серіалів</caption>
+                <thead>
+                    <tr>
+                        <th>Назва</th>
+                        <th>Тип</th>
+                        <th>Що подобається</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Interstellar</td>
+                        <td>Фільм</td>
+                        <td>Масштаб, музика, емоційність</td>
+                    </tr>
+                    <tr>
+                        <td>Sherlock</td>
+                        <td>Серіал</td>
+                        <td>Темп, атмосфера, харизматичні персонажі</td>
+                    </tr>
+                    <tr>
+                        <td>Dark</td>
+                        <td>Серіал</td>
+                        <td>Німецька мова, напруга, складний сюжет</td>
+                    </tr>
+                    <tr>
+                        <td>La La Land</td>
+                        <td>Фільм</td>
+                        <td>Музика, кольори, емоційний настрій</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                Я люблю історії, у яких є сильна атмосфера, запам'ятовуваний саундтрек і персонажі,
+                за якими цікаво спостерігати. Саме тому мене приваблюють як масштабні фільми, так і
+                серіали з багатошаровим сюжетом.
+            </p>
+        </section>
+
+        <section class="section-card" id="video">
+            <div class="section-heading">
+                <p class="section-label">Відео</p>
+                <h2>YouTube-відео для атмосфери сторінки</h2>
+            </div>
+            <p>
+                У цей розділ я додала вбудоване відео з YouTube як мультимедійний елемент сторінки.
+            </p>
+            <div class="video-frame">
+                <iframe
+                    src="https://www.youtube.com/embed/rVfb3RvwJbo"
+                    title="YouTube video player"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="section-card" id="music">
+            <div class="section-heading">
+                <p class="section-label">Списки й посилання</p>
+                <h2>Мої музичні настрої</h2>
+            </div>
+            <ul class="fancy-list">
+                <li>спокійні плейлисти для читання та вечірнього відпочинку;</li>
+                <li>енергійна музика для дороги або активного дня;</li>
+                <li>мелодійні композиції, які хочеться зіграти на гітарі.</li>
+            </ul>
+            <ol class="number-list">
+                <li><a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">Spotify</a> для щоденних плейлистів.</li>
+                <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a> для live-виконань і каверів.</li>
+                <li><a href="https://soundcloud.com/" target="_blank" rel="noopener noreferrer">SoundCloud</a> для пошуку нових треків.</li>
+            </ol>
+            <p class="back-link"><a href="#top">Повернутися на початок сторінки</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <p>&copy; Новікова Маргарита</p>
+            <p>Навчальний сайт-візитка студентки 1 курсу ХНУ ім. В. Н. Каразіна</p>
+        </div>
+        <div class="footer-links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://t.me/" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">Spotify</a>
+        </div>
+        <div class="clock-badge" data-clock>
+            Київський час завантажується...
+        </div>
+    </footer>
+</body>
+</html>

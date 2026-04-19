@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Відгук і контакти</title>
+    <style>
+        body.page-contact .feedback-form {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        body.page-contact .feedback-form > *:nth-child(5),
+        body.page-contact .feedback-form > *:nth-child(6),
+        body.page-contact .feedback-form > *:nth-child(7),
+        body.page-contact .feedback-form > *:nth-child(8) {
+            grid-column: 1 / -1;
+        }
+
+        @media (max-width: 760px) {
+            body.page-contact .feedback-form {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body id="top" class="page-contact">
+    <header class="site-header compact">
+        <div class="brand-block">
+            <p class="eyebrow">Сторінка 4</p>
+            <h1>Відгук і контакти</h1>
+            <p class="subtitle">Форма зворотного зв'язку, карта та способи зв'язатися зі мною</p>
+        </div>
+        <nav class="main-nav" aria-label="Головне меню">
+            <a href="index.html">Головна</a>
+            <a href="hobbies.html">Захоплення</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="contact.html">Відгук і контакти</a>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="section-card">
+            <div class="section-heading">
+                <p class="section-label">Навігація сторінкою</p>
+                <h2>Швидкі переходи</h2>
+            </div>
+            <div class="link-cloud">
+                <a href="#feedback">Форма відгуку</a>
+                <a href="#map">Карта</a>
+                <a href="#contacts">Контакти</a>
+            </div>
+        </section>
+
+        <section class="section-card" id="feedback">
+            <div class="section-heading">
+                <p class="section-label">Форма</p>
+                <h2>Залишити відгук про сайт</h2>
+            </div>
+            <form class="feedback-form" data-feedback-form>
+                <label>
+                    Ваше ім'я
+                    <input type="text" name="name" placeholder="Введіть ім'я" required>
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" placeholder="example@mail.com" required>
+                </label>
+                <label>
+                    Яке захоплення сподобалося найбільше?
+                    <select name="topic">
+                        <option value="reading">Читання літератури</option>
+                        <option value="guitar">Гра на гітарі</option>
+                        <option value="games">Комп'ютерні ігри</option>
+                        <option value="movies">Фільми та серіали</option>
+                        <option value="german">Німецька мова</option>
+                        <option value="music">Прослуховування музики</option>
+                    </select>
+                </label>
+                <fieldset>
+                    <legend>Оцініть сайт</legend>
+                    <label class="inline-option"><input type="radio" name="score" value="5" checked> Відмінно</label>
+                    <label class="inline-option"><input type="radio" name="score" value="4"> Добре</label>
+                    <label class="inline-option"><input type="radio" name="score" value="3"> Цікаво, але можна доповнити</label>
+                </fieldset>
+                <label>
+                    Ваші враження
+                    <textarea name="message" rows="5" placeholder="Напишіть кілька слів про сайт"></textarea>
+                </label>
+                <button class="action-button" type="submit">Надіслати відгук</button>
+                <p class="form-status" data-form-status aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="section-card" id="map">
+            <div class="section-heading">
+                <p class="section-label">Інформер</p>
+                <h2>Карта університету</h2>
+            </div>
+            <p>
+                Для змістовного доповнення сайту я додала карту з розташуванням Харківського
+                національного університету ім. В. Н. Каразіна.
+            </p>
+            <div class="map-frame">
+                <iframe
+                    src="https://www.google.com/maps?q=V.%20N.%20Karazin%20Kharkiv%20National%20University&output=embed"
+                    title="Карта ХНУ ім. В. Н. Каразіна"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="section-card" id="contacts">
+            <div class="section-heading">
+                <p class="section-label">Контакти</p>
+                <h2>Де мене знайти</h2>
+            </div>
+            <ul class="fancy-list">
+                <li>Телефон: +380 (000) 123-45-67</li>
+                <li>Email: margarita.novikova.student@example.com</li>
+                <li>Instagram: <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">@instagram</a></li>
+                <li>Telegram: <a href="https://t.me/" target="_blank" rel="noopener noreferrer">@telegram</a></li>
+            </ul>
+            <p class="note">
+                Контактні дані наведено як навчальний приклад для ЛР.
+            </p>
+            <p class="back-link"><a href="#top">Повернутися на початок сторінки</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <p>&copy; Новікова Маргарита</p>
+            <p>Навчальний сайт-візитка студентки 1 курсу ХНУ ім. В. Н. Каразіна</p>
+        </div>
+        <div class="footer-links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://t.me/" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">Spotify</a>
+        </div>
+        <div class="clock-badge" data-clock>
+            Київський час завантажується...
+        </div>
+    </footer>
+</body>
+</html>
